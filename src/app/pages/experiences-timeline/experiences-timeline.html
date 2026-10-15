@@ -1,0 +1,27 @@
+<app-section-header
+  title="Experiências"
+  description="Da criação de jogos ao desenvolvimento de aplicações web"
+>
+</app-section-header>
+
+<div class="timeline">
+  @for (experience of experienceTimeline; track experience.name) {
+    <div class="timeline-point">
+      <div class="timeline-track">
+        <span class="circle"></span>
+        <div class="line"></div>
+      </div>
+      <div class="experience-card">
+        <h1 class="experience-name">
+          {{ experience.name }} - <span>{{ experience.role }}</span>
+        </h1>
+        <div class="bullet-points">
+          @for (bulletPoint of experience.bulletPoints; track bulletPoint) {
+            <p class="bullet-point">º {{ bulletPoint }}</p>
+          }
+          <p class="stack">{{ experience.stack.join(' / ') }}</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>

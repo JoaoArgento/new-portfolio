@@ -1,0 +1,65 @@
+:host {
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color: var(--header-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+.name {
+  color: var(--text-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 3px;
+}
+
+nav {
+  // margin-top: 10px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(var(--stroke-medium-rgb), 0.5);
+  background-color: rgba(var(--bg-medium-rgb), 0.4);
+  border-radius: 100px;
+  padding: 8px 18px;
+}
+
+a {
+  padding: 8px 10px;
+  border-radius: 100px;
+  text-decoration: none;
+  // background-color: var(--link-bg-medium);
+  color: var(--text-medium);
+  font-size: 17px;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.social-media-btn {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  align-items: center;
+  background-color: rgba(var(--bg-medium-rgb), 0.4);
+  border: 1px solid rgba(var(--stroke-medium-rgb), 0.5);
+  border-radius: 100px;
+  color: var(--text-default);
+  padding: 8px 16px;
+}

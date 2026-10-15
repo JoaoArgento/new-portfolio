@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    color: var(--subtitle-default);
+  }
+
+  .description {
+    color: var(--text-medium);
+    font-size: 18px;
+  }
+}

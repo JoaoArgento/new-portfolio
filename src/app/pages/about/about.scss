@@ -1,0 +1,22 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.about-me {
+  width: 600px;
+  border: 1px solid rgba(var(--stroke-medium-rgb), 0.8);
+  // background-color: rgba(var(--bg-medium-rgb), 0.4);
+  border-radius: 20px;
+  padding: 22px 24px;
+  color: var(--text-medium);
+
+  h1 {
+    color: var(--title-default);
+  }
+}

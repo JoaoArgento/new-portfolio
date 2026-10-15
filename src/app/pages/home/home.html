@@ -1,0 +1,24 @@
+<div class="new-projects">
+  <span class="circle"></span>
+  Disponivel para novos projetos
+</div>
+
+<div class="presentation">
+  <h1 class="name">João Pedro Argento Garcia</h1>
+  <p class="presentation-text">
+    Building refined, utility‑focused web applications with a focus on performance, accessibility,
+    and lo-fi aesthetics.
+  </p>
+</div>
+
+<div class="stacks">
+  @for (technology of technologies; track technology.name) {
+    <div class="technology">
+      <ng-icon [name]="technology.iconName" />
+      <span class="technology-name">{{ technology.name }}</span>
+    </div>
+    @if ($index < technologies.length - 1) {
+      <div class="separator"></div>
+    }
+  }
+</div>
