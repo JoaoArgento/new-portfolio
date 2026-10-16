@@ -8,16 +8,18 @@
   @for (project of projects; track project.name) {
     <div class="project-card">
       <div class="card-header">
-        <div class="icon"></div>
         <div class="project-info">
           <h1 class="project-name">
             {{ project.name }}
           </h1>
           <p>{{ project.stack.join(' - ') }}</p>
         </div>
+        <ng-icon name="bootstrapBoxArrowInUpRight"></ng-icon>
       </div>
       <p class="project-description">{{ project.description }}</p>
-      <img [src]="project.imageSrc" />
+      <div class="project-image">
+        <img [src]="project.imageSrc" />
+      </div>
     </div>
   }
 </div>

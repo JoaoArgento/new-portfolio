@@ -11,12 +11,22 @@
 .about-me {
   width: 600px;
   border: 1px solid rgba(var(--stroke-medium-rgb), 0.8);
-  // background-color: rgba(var(--bg-medium-rgb), 0.4);
   border-radius: 20px;
   padding: 22px 24px;
-  color: var(--text-medium);
+  color: rgba(var(--text-default-rgb), 0.7);
+
+  p {
+    font-size: 18px;
+    // text-indent: 16px;
+    text-align: center;
+  }
 
   h1 {
     color: var(--title-default);
+    padding: 16px;
   }
+}
+
+.important {
+  color: var(--title-default);
 }

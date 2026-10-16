@@ -19,17 +19,26 @@
   border: 1px solid rgba(var(--stroke-medium-rgb), 0.5);
   background-color: rgba(var(--bg-medium-rgb), 0.4);
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 20px 22px;
   color: var(--text-medium);
 
   .card-header {
     display: flex;
-    flex-direction: row;
     align-content: center;
+    justify-content: space-between;
+    flex: 1;
+
+    ng-icon {
+      font-size: 20px;
+    }
   }
   .project-name {
     font-size: 1.5em;
     font-weight: 500;
     color: var(--subtitle-default);
+  }
+
+  .project-image {
+    background-color: rgba(var(--bg-medium-rgb), 0.4);
   }
 }

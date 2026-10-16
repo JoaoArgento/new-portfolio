@@ -52,6 +52,7 @@
   border-radius: 14px;
   padding: 16px 20px;
   color: var(--text-medium);
+  box-shadow: 0px 4px 14px 3px #00000072;
 }
 
 .technology {
@@ -69,7 +70,54 @@
 }
 
 .separator {
-  height: 20px;
-  width: 2px;
+  height: 22px;
+  width: 1px;
   background-color: rgb(var(--bg-medium-rgb));
+}
+
+.button-group {
+  display: flex;
+  gap: 6px;
+
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    color: var(--text-default);
+  }
+
+  ng-icon {
+    font-size: 18px;
+  }
+
+  .cv-button {
+    border-radius: 8px;
+    background: var(--title-default);
+    border: 1px solid var(--border-color);
+    font-size: 17px;
+    box-shadow: 0px 4px 14px 3px #000000ad;
+  }
+
+  .about-button {
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--btn-bg-color);
+    border: 1px solid var(--border-medium);
+  }
+}
+
+.social-media-btn {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  align-items: center;
+  background-color: rgba(var(--bg-medium-rgb), 0.4);
+  border: 1px solid rgba(var(--stroke-medium-rgb), 0.5);
+  // border-radius: 100px;
+  border-radius: 8px;
+  color: var(--text-default);
+  padding: 8px 16px;
 }

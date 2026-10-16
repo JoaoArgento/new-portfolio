@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Navbar } from '../../components/navbar/navbar';
 import { NgIcon, provideIcons } from '@ng-icons/core';
+import { bootstrapLinkedin, bootstrapGithub } from '@ng-icons/bootstrap-icons';
+import { bootstrapArrowDown, bootstrapInfoCircle } from '@ng-icons/bootstrap-icons';
+
 import {
   diPostgresqlOriginal,
   diAngularOriginal,
@@ -25,6 +28,10 @@ export interface Technology {
       diPostgresqlOriginal,
       diDotNetOriginal,
       diCsharpOriginal,
+      bootstrapLinkedin,
+      bootstrapGithub,
+      bootstrapArrowDown,
+      bootstrapInfoCircle,
     }),
   ],
 })

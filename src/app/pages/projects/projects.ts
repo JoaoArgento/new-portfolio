@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { SectionHeader } from '../../components/section-header/section-header';
+import { bootstrapArrowUpRight, bootstrapBoxArrowInUpRight } from '@ng-icons/bootstrap-icons';
+import { NgIcon, provideIcons } from '@ng-icons/core';
 
 export interface Project {
   name: string;
@@ -12,9 +14,10 @@ export interface Project {
 
 @Component({
   selector: 'app-projects',
-  imports: [SectionHeader],
+  imports: [SectionHeader, NgIcon],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
+  providers: [provideIcons({ bootstrapBoxArrowInUpRight })],
 })
 export class Projects {
   readonly projects: Project[] = [

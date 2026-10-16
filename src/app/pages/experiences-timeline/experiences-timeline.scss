@@ -7,10 +7,16 @@
   gap: 20px;
 }
 
+h1,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
 .timeline {
   width: 100%;
   display: flex;
-  gap: 22px;
+  gap: 26px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -18,8 +24,21 @@
 
 .timeline-point {
   display: flex;
+  gap: 18px;
+}
+
+.experience-card {
   flex: 1;
-  gap: 16px;
+  .experience-name {
+    color: var(--subtitle-default);
+    font-size: 1.2em;
+  }
+  .role {
+    font-size: 18px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .timeline-track {
@@ -27,13 +46,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.experience-card {
-  .experience-name {
-    color: var(--subtitle-default);
-    font-size: 1.3em;
-  }
+  flex-shrink: 0;
 }
 
 .bullet-points {
